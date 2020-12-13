@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context="com.jvsabin.try3.MainActivity">
+
+    <Spinner
+        android:id="@+id/spinner"
+        android:layout_width="153dp"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:id="@+id/et1"
+        android:layout_width="190dp"
+        android:layout_height="40dp"
+        android:hint="Type" />
+
+    <EditText
+        android:id="@+id/et2"
+        android:layout_width="190dp"
+        android:layout_height="40dp"
+        android:hint="Description" />
+
+    <EditText
+        android:id="@+id/et3"
+        android:layout_width="190dp"
+        android:layout_height="40dp"
+        android:hint="Amount"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/submit"
+        android:layout_width="130dp"
+        android:layout_height="42dp"
+        android:text="SUBMIT" />
+
+    <EditText
+        android:id="@+id/et4"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:hint="Add Balance"
+        android:inputType="number" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button3"
+            android:layout_width="130dp"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:text="ADD Balance" />
+
+        <Button
+            android:id="@+id/button4"
+            android:layout_width="130dp"
+            android:layout_height="40dp"
+            android:orientation="horizontal"
+            android:text="Voice" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_width="match_parent"
+        android:layout_height="9dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/tv9"
+            android:layout_width="215dp"
+            android:layout_height="wrap_content"
+            android:text="   Expense History"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tv11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Balance History"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="234dp"
+        android:orientation="horizontal">
+
+
+        <ListView
+            android:id="@+id/tv"
+            android:layout_width="200dp"
+            android:layout_height="197dp"
+
+            />
+
+        <ListView
+            android:id="@+id/tvB"
+            android:layout_width="200dp"
+            android:layout_height="198dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Current Balance: " />
+
+</LinearLayout>
